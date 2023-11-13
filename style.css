@@ -158,3 +158,48 @@ hr {
         background-color: gray;
     }
 }
+
+.internship {
+    /* border: 2px solid whitesmoke; */
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.internship_description {
+    text-align: left;
+}
+
+.internship_description li {
+    margin: 10px;
+    font-size: 22px;
+    list-style: none;
+}
+
+.internship_description li p b {
+    font-size: 24px;
+    color: black;
+}
+
+.internship_description li p b:hover {
+    color: gray;
+}
+
+.internship_name {
+    text-align: left;
+    color: black;
+}
+
+.internship_date {
+    text-align: left;
+}
+
+.company_name {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.company_name:hover {
+    color: aqua;
+}
