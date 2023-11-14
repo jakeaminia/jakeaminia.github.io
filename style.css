@@ -27,13 +27,13 @@ header {
 
 .logo {
     position: relative;
-    height: 40px;
-    width: 40px;
+    height: 3vi;
+    width: 3vi;
     margin-right: auto;
     background-color: rgb(90, 90, 90);
     border: 2px solid white;
     border-radius: 50%;
-    animation: rotate 4s cubic-bezier(0.755, 0.05, 0.855, 0.06) forwards infinite;
+    animation: rotate 3s cubic-bezier(1, 0.05, 0.5, 0.06) forwards infinite;
 }
 
 @keyframes rotate {
@@ -61,6 +61,7 @@ header {
     justify-content: center;
     align-items: center;
     list-style: none;
+    font-size: 1.5vi;
     background-color: rgb(90, 90, 90);
 }
 
@@ -68,7 +69,7 @@ header {
     background-color: rgb(90, 90, 90);
     color: whitesmoke;
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 2vi;
     position: relative;
 }
 
@@ -78,14 +79,15 @@ header {
 }
 
 .contact {
-    margin-left: 20px;
+    margin-left: 2vi;
     background-color: rgb(90, 90, 90);
     border: none;
     border-radius: 50px;
+    font-size: 1.3vi;
     color: whitesmoke;
     transition: all 0.3s ease 0s;
     border: 1px solid whitesmoke;
-    padding: 5px;
+    padding: 0.5vi;
     position: relative;
 }
 
@@ -100,12 +102,12 @@ header {
     background-size: cover; */
     background: salmon;
     height: 100%;
-    width: 60%;
-    top: 100px;
+    width: 60vi;
+    top: 8vi;
     position: relative;
     border: 1px solid black;
-    padding: 5%;
-    padding-top: 1%;
+    padding: 5vi;
+    padding-top: 1vi;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -170,6 +172,10 @@ hr {
     padding: 10px;
 }
 
+.internship:hover {
+    background-color: rgb(255, 133, 119);
+}
+
 .internship_description {
     text-align: left;
 }
@@ -207,6 +213,7 @@ hr {
 
 .company_name:hover {
     color: aqua;
+    background-color: black;
 }
 
 .resume_pdf {
@@ -266,7 +273,8 @@ hr {
 .contact_link {
     text-decoration: none;
     color: blue;
-    font-size: 24px;
+    font-size: 2vi;
+    width: fit-content;
 }
 
 .contact_link:hover {
@@ -276,12 +284,12 @@ hr {
 
 .contact_name {
     color: black;
-    font-size: 26px;
+    font-size: 2vi;
 }
 
 .skill_category {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3vi;
+    padding-right: 3vi;
 }
 
 .skill_list {
@@ -296,9 +304,10 @@ hr {
 
 .skill_description li {
     position: relative;
-    margin: 5px;
+    margin: 0.5vi;
     border: 1px solid white;
-    padding: 1px;
+    padding: 0.5vi;
+    font-size: 1vi;
 }
 
 .skill_description li:hover {
@@ -307,11 +316,65 @@ hr {
 
 .skill_category_name {
     text-align: left;
-    bottom: 10px;
+    bottom: 1vi;
     position: relative;
     color: black;
 }
 
 .skill {
     text-align: left;
+}
+
+.project {
+    padding-left: 3vi;
+    padding-right: 3vi;
+    padding-top: 0.2vi;
+    text-align: left;
+}
+
+.project:hover {
+    background-color: rgb(255, 133, 119);
+}
+
+.project_header {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+
+.project_link {
+    text-decoration: none;
+    color: blue;
+    text-align: left;
+    display: inline-flex;
+    position: relative;
+    border: 1px solid white;
+    padding: 0.5vi;
+    width: fit-content;
+    font-size: 1.3vi;
+}
+
+.project_link:hover {
+    color: blueviolet;
+    background-color: whitesmoke;
+}
+
+.project_language {
+    left: 1vi;
+    position: relative;
+    display: inline-flex;
+    margin-left: auto;
+    color: black;
+    font-size: 1.5vi;
+}
+
+.project_description {
+    list-style: none;
+    text-align: left;
+    padding: 1vi;
+}
+
+.project_description li {
+    margin-bottom: 1.5vi;
+    font-size: 2vi;
 }
