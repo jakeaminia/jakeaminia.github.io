@@ -223,6 +223,10 @@ hr {
     color: black;
 }
 
+.home_description b:hover {
+    color: gray;
+}
+
 .inflate_resume {
     top: 20px;
     position: relative;
@@ -243,4 +247,30 @@ hr {
 .contact_me:hover {
     color: blueviolet;
     cursor: pointer;
+}
+
+.github_link {
+    text-decoration: none;
+    color: blue;
+}
+
+.github_link:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.contact_link {
+    text-decoration: none;
+    color: blue;
+    font-size: 24px;
+}
+
+.contact_link:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.contact_name {
+    color: black;
+    font-size: 26px;
 }
