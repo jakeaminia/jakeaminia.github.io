@@ -123,6 +123,10 @@ header {
     margin: 10px;
 }
 
+.coursework_list li {
+    font-size: 22px;
+}
+
 .coursework_list li:hover {
     color: black;
 }
@@ -273,4 +277,41 @@ hr {
 .contact_name {
     color: black;
     font-size: 26px;
+}
+
+.skill_category {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.skill_list {
+    list-style: none;
+}
+
+.skill_description {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.skill_description li {
+    position: relative;
+    margin: 5px;
+    border: 1px solid white;
+    padding: 1px;
+}
+
+.skill_description li:hover {
+    background-color: gray;
+}
+
+.skill_category_name {
+    text-align: left;
+    bottom: 10px;
+    position: relative;
+    color: black;
+}
+
+.skill {
+    text-align: left;
 }
