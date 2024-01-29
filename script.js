@@ -218,6 +218,7 @@ function printCards(cards) {
 }
 
 function offBy(number, product) {
+    if (number < product) return product - number
     return Math.min(number % product, Math.abs(product - (number % product)))
 }
 
