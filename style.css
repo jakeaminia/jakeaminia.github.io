@@ -378,3 +378,7 @@ hr {
     margin-bottom: 1.5vi;
     font-size: 2vi;
 }
+
+.card_solution {
+    border: 2px solid black;
+}
