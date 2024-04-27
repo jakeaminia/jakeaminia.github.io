@@ -7,7 +7,8 @@
 }
 
 body {
-    background: url(images/whiteDigitalBG.avif) no-repeat center center fixed;
+    /* background: url(images/whiteDigitalBG.avif) no-repeat center center fixed; */
+    background-color: black;
     background-size: cover;
 
 }
@@ -15,9 +16,11 @@ body {
 header {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center;    
     padding: 10px 50px;
-    background-color: rgb(90, 90, 90);
+    background-color: black;
+    border: 1px solid white;
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -30,10 +33,10 @@ header {
     height: 3vi;
     width: 3vi;
     margin-right: auto;
-    background-color: rgb(90, 90, 90);
+    background-color:black;
     border: 2px solid white;
     border-radius: 50%;
-    animation: rotate 3s cubic-bezier(1, 0.05, 0.5, 0.06) forwards infinite;
+    animation: rotate 4s cubic-bezier(1, 0.05, 0.5, 0.06) forwards infinite;
 }
 
 @keyframes rotate {
@@ -62,11 +65,11 @@ header {
     align-items: center;
     list-style: none;
     font-size: 1.5vi;
-    background-color: rgb(90, 90, 90);
+    background-color: black;
 }
 
 .nav_links li {
-    background-color: rgb(90, 90, 90);
+    background-color: black;
     color: whitesmoke;
     display: inline-block;
     padding: 0 2vi;
@@ -80,9 +83,9 @@ header {
 
 .contact {
     margin-left: 2vi;
-    background-color: rgb(90, 90, 90);
-    border: none;
-    border-radius: 50px;
+    background-color: black;
+    /* border: none; */
+    /* border-radius: 50px; */
     font-size: 1.3vi;
     color: whitesmoke;
     transition: all 0.3s ease 0s;
@@ -93,31 +96,34 @@ header {
 
 .contact:hover {
     background-color: whitesmoke;
-    color: rgb(90, 90, 90);
+    color: black;
     cursor: pointer;
 }
 
 .page_view {
-    /* background: url(images/whiteDigitalBG.avif) no-repeat center center fixed;
-    background-size: cover; */
-    background: salmon;
+    background: rgb(15, 23, 42);
     height: 100%;
-    width: 60vi;
+    width: 72vi;
     top: 8vi;
     position: relative;
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 5vi;
     padding-top: 1vi;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    color: white;
+    color: darkgray;
 }
 
 .page_heading {
     position: relative;
     text-align: center;
-    color: black;
+    color: white;
+}
+
+.coursework_includes {
+    color: white;
+    font-size: 24px;
 }
 
 .coursework_list {
@@ -127,30 +133,32 @@ header {
 
 .coursework_list li {
     font-size: 22px;
+    color: darkgray;
 }
 
-.coursework_list li:hover {
+/* .coursework_list li:hover {
     color: black;
-}
+} */
 
 hr {
     margin: 20px;
 }
 
 .education_key_term {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 40%;
     padding: 2px;
-    background-color: gray;
+    /* background-color: gray; */
+    color: white;
 }
 
 .education_description {
     line-height: 50px;
 }
 
-.education_key_term:hover {
+/* .education_key_term:hover {
     animation: color_shift 1s ease-in-out both infinite alternate-reverse;
-}
+} */
 
 @keyframes color_shift {
     0% {
@@ -168,13 +176,13 @@ hr {
 
 .internship {
     /* border: 2px solid whitesmoke; */
-    color: whitesmoke;
+    color: darkgray;
     padding: 10px;
 }
 
-.internship:hover {
-    background-color: rgb(255, 133, 119);
-}
+/* .internship:hover {
+    background-color: rgb(15, 23, 42);
+} */
 
 .internship_description {
     text-align: left;
@@ -188,16 +196,16 @@ hr {
 
 .internship_description li p b {
     font-size: 24px;
-    color: black;
+    color: white;
 }
 
-.internship_description li p b:hover {
+/* .internship_description li p b:hover {
     color: gray;
-}
+} */
 
 .internship_name {
     text-align: left;
-    color: black;
+    color: white;
 }
 
 .internship_date {
@@ -206,14 +214,14 @@ hr {
 
 .company_name {
     text-decoration: none;
-    color: black;
-    border: 1px solid black;
+    color: white;
+    /* border: 1px solid black; */
     padding: 3px;
 }
 
 .company_name:hover {
     color: aqua;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .resume_pdf {
@@ -225,18 +233,18 @@ hr {
 }
 
 .home_description {
-    color: whitesmoke;
+    color: darkgray;
     line-height: 30px;
     font-size: 24px;
 }
 
 .home_description b {
-    color: black;
+    color: white;
 }
 
-.home_description b:hover {
+/* .home_description b:hover {
     color: gray;
-}
+} */
 
 .inflate_resume {
     top: 20px;
@@ -252,38 +260,38 @@ hr {
 }
 
 .contact_me {
-    color: blue;
+    color: cyan;
 }
 
 .contact_me:hover {
-    color: blueviolet;
+    /* color: blueviolet; */
     cursor: pointer;
 }
 
 .github_link {
     text-decoration: none;
-    color: blue;
+    color: cyan;
 }
 
-.github_link:hover {
+/* .github_link:hover {
     color: blueviolet;
     cursor: pointer;
-}
+} */
 
 .contact_link {
     text-decoration: none;
-    color: blue;
+    color: white;
     font-size: 2vi;
     width: fit-content;
 }
 
 .contact_link:hover {
-    color: blueviolet;
+    color: cyan;
     cursor: pointer;
 }
 
 .contact_name {
-    color: black;
+    color: white;
     font-size: 2vi;
 }
 
@@ -305,20 +313,20 @@ hr {
 .skill_description li {
     position: relative;
     margin: 0.5vi;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     padding: 0.5vi;
     font-size: 1vi;
 }
 
-.skill_description li:hover {
+/* .skill_description li:hover {
     background-color: gray;
-}
+} */
 
 .skill_category_name {
     text-align: left;
     bottom: 1vi;
     position: relative;
-    color: black;
+    color: white;
 }
 
 .skill {
@@ -332,9 +340,9 @@ hr {
     text-align: left;
 }
 
-.project:hover {
-    background-color: rgb(255, 133, 119);
-}
+/* .project:hover {
+    background-color: rgb(15, 23, 42);
+} */
 
 .project_header {
     justify-content: flex-end;
@@ -344,19 +352,18 @@ hr {
 
 .project_link {
     text-decoration: none;
-    color: blue;
+    color: white;
     text-align: left;
     display: inline-flex;
     position: relative;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     padding: 0.5vi;
     width: fit-content;
     font-size: 1.3vi;
 }
 
 .project_link:hover {
-    color: blueviolet;
-    background-color: whitesmoke;
+    color: cyan;
 }
 
 .project_language {
@@ -364,7 +371,7 @@ hr {
     position: relative;
     display: inline-flex;
     margin-left: auto;
-    color: black;
+    color: white;
     font-size: 1.5vi;
 }
 
@@ -376,9 +383,14 @@ hr {
 
 .project_description li {
     margin-bottom: 1.5vi;
-    font-size: 2vi;
+    font-size: 1.5vi;
 }
 
 .card_solution {
-    border: 2px solid black;
+    /* border: 2px solid black;  */
+    color: white;
+}
+
+.game_description {
+    color: white;
 }
