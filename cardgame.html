@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game - Jake Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src='script.js' defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/J-pfp.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="cardgame.html">Card Game</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Card Game</h1>
+            <div class="card-game-container">
+                <div class="rules">
+                    <h2>Rules of the Game</h2>
+                    <p>The cards are valued from 1-13, with A=1, J=11, Q=12, K=13 and no jokers. 2 cards are placed face
+                        up in the middle, and their values are multiplied together.
+                        Each player picks 4 cards.
+                        The goal is to get a number closest to a multiple of the middle product.
+                        A player 'gets' a number by representing the digits of that number with their cards.
+                        2-digit cards carry their first digit to the left, as when performing addition on paper. If
+                        two or more players get the same distance from a multiple, the higher number wins. <strong>No
+                            calculators allowed!</strong></p>
+                    <p><strong>Examples:</strong> (A 9 5) is 195, (A 10 5) is 205, (A Q 5 2) is 2,252, (K 3 J 7) is
+                        13,417</p>
+                </div>
+                <div class="input-form">
+                    <h2>Calculator</h2>
+                        <label for="middle_cards">Enter the two middle cards:</label>
+                        <input type="text" class="middle_cards" name="middle_cards" placeholder="K,10">
+
+                        <label for="player_cards">Enter the four cards of each player:</label>
+                        <input type="text" class="player_cards" name="player_cards"
+                            placeholder="Q,3,5,A; 6,7,2,8; 10,J,K,4">
+
+                        <button onclick="calculateGame()" class="calculate_button" type="submit">Submit</button>
+                </div>
+            </div>
+            <div class="card_solution"></div>
+        </section>
+    </main>
+</body>
+
+</html>
